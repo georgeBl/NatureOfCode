@@ -32,30 +32,20 @@ function Walker() {
     };
 
     this.step = function () {
-        var probArray = [];
-        probArray[1] = 1;
-        probArray[2] = 1;
-        probArray[3] = 2;
-        probArray[4] = 3;
-        probArray[5] = 3;
 
-        var index = floor(random(probArray.length));
-        var r = probArray[index];
+        var r = random(1);
 
-        if (r == 1) {
-            //move up and to the right
+        //40 % chanse to move to the right
+        if (r < 0.4) {
             this.x++;
-            this.y--;
-        } else if (r == 2) {
-            //move down to the right
-            this.x++;
+        } else if (r < 0.6) { //20% to the left
+            this.x--;
+        } else if (r < 0.8) { //20% down
             this.y++;
         } else {
-            //move down to the left
-            this.x++;
-            this.y--;
+            this.y--; //20% up
         }
-        console.log(r);
+
         this.x = constrain(this.x, 0, width - 1);
         this.y = constrain(this.y, 0, height - 1);
     };
