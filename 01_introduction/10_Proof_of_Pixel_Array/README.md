@@ -50,4 +50,4 @@ In this example the walker moves its x and y poistion in 8 possible dirrections 
 }
 
 ```
-[See the Code in action](http://htmlpreview.github.com/?https://github.com/montaynej/NatureOfCode/01_introduction/01_Random_Walker_with_4_outcomes/code.html) //must be fixed
+[See the Code in action](https://georgebl.github.io/NatureOfCode/01_introduction/10_Proof_of_Pixel_Array/code.html) 

@@ -56,4 +56,4 @@ The step function creates a random number between 0 and 4 and then floors its. B
 }
 
 ```
-[See the Code in action](http://htmlpreview.github.com/?https://github.com/montaynej/NatureOfCode/01_introduction/01_Random_Walker_with_4_outcomes/code.html) //must be fixed
+[See the Code in action](https://georgebl.github.io/NatureOfCode/01_introduction/01_Random_Walker_with_4_outcomes/code.html)
