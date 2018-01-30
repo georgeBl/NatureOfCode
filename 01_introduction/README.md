@@ -11,7 +11,7 @@ This section of our repository covers areas including randomness, probablilty an
 6. [Proof of Normal/Gaussian Distribution](06_Proof_of_Normal_Gaussian_Distribution)
 7. [Proof of Normal/Gaussian Distribution 2 Dimensions](07_Proof_of_Normal_Gaussian_Distribution_2_Dimensions)
 8. [Proof of One Dimensional Perlin Noise](08_Proof_of_One_Dimensional_Perlin_Noise)
-9. [Proof of One Dimensional Perlin noise With Vectors](09_Proof_of_One_Dimenstional_Perlin_Noise_With_Vectors)
+9. [Proof of One Dimensional Perlin noise With Vectors](09_Proof_of_One_Dimensional_Perlin_Noise_With_Vectors)
 10. [Proof of Pixel Array](10_Proof_of_Pixe_Array)
 11. [Proof of Pixel Array V2](11_Proof_of_Pixel_Array_V2)
 12. [Proof of Pixel Array V3](12_Proof_of_Pixel_Array_V3)
