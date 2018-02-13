@@ -1,7 +1,8 @@
 //defining vectors
 var mouse,
     center,
-    vectorLine;
+    vectorLine,
+    magnitude;
 
 //define the canvas 
 function setup() {
@@ -17,7 +18,10 @@ function draw() {
     mouse = createVector(mouseX, mouseY);
     center = createVector(width / 2, height / 2);
     vectorLine = mouse.sub(center);
-    vectorLine.mult(0.5);
+
+    vectorLine.normalize();
+    vectorLine.mult(50);
+
 
     translate(width / 2, height / 2);
     strokeWeight(2);
