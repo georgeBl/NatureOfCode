@@ -23,6 +23,7 @@ function Walker() {
         var mouse = createVector(mouseX, mouseY);
         this.acceleration = p5.Vector.sub(mouse, this.location);
         this.acceleration.normalize();
+        this.acceleration.setMag(0.2);
         this.velocity.add(this.acceleration);
         this.velocity.limit(10);
 
