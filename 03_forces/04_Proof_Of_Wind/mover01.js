@@ -20,7 +20,7 @@ var Mover = function (_x, _y, _vx, _vy, _ax, _ay, _m) {
 
         //And draw an ellipse at the new location vector points
         ellipse(this.location.x, this.location.y, 3 * this.mass, 3 * this.mass);
-        fill(0);
+        fill(255);
 
     }
 
