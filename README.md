@@ -1,33 +1,32 @@
 # The Nature of Code - P5
 
 
-This wil be our online repository of all the files we create from the book.
+This wil be the online repository of all the files created from the book in Interactive Graphics.
 
 
 ## Chapters to be covered
 1. [Introduction - Randomness, Perlin Noise, Probability](01_introduction/)
-2. Vectors and Motion
-3. Forces
-4. Particle Systems
+2. [Vectors and Motion](02_vectors/)
+3. [Forces](03_forces/)
+4. [Particle Systems](04_/particle_systems)
 
 ## Some standard GIT command
-You can clone a repository. This means a copy of yours or someone elses. If the respoitory is your own just use the command
+This GIT repostory is started cloning the follwing repository:
 ```
 git clone https://github.com/montaynej/NatureOfCode.git
 ```
-If the repository is someone elses and you want to push back to yours then you need to create a respository for it and then type the following
+In order to upload the repository in your account, the follwoing commands needs to be executed:
 ```
 $ git remote set-url origin http://github.com/YOU/YOUR_REPO
 ```
-Then make a push
 ```
 git push -u origin master
 ```
-If you are working on your Repository from another machine then before you start make sure to type the following to pull the latest version to your machine
+When using a different machine the follwing command can be used to download the repository into the machine:
 ```
 git pull
 ```
-Other useful commands
+The following set of commands are used in order to push the project on github. 5th command needs to be used only once. 2nd and 3rd commands are optional.
 ```
 git add .
 git status

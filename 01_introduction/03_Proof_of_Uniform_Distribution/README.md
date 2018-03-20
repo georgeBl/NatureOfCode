@@ -1,53 +1,46 @@
-# Random Walker with 9 Outcomes
+# Uniform Distribution
 
 
 
-In this file we create a Walker class which creates walker objects. Each time the step function is called on this object it selects a random number and based on that it produces an outcomes. We also constrain the x and y value using the built in constrain() function.
+In this file we take a look at the random() function provided by p5. We can see using the representation that the numbers are not trully random and the distribution of them is uniform.
 
-The main script contains the two main functions, setup() & draw(). The draw function calls the objects built in function
+The main script has two main functions, setup() and draw().
+
+In the setup() we set the boundries of the canvas and initiate the array that will count the random numbers to 0 on each itteration.
 
 ```js
-var walker;
-
 function setup() {
-    createCanvas(320,640);
-    background(127);
-    walker = new Walker();
+  createCanvas(640,360);
+  for (var i = 0; i < total; i++) {
+    randomCounts[i] = 0;
+  }
 }
+```
 
+
+In the draw() function we give the background a colour and on each frame we initiate the index variable with a random integer number that will be between (0 and 20). After this the array counting the random numbers will be initiated by 1 on each index that was generated.
+
+In order to see a clear representation we used rectangles. Each time the array gets incremented the rectangle representing the itteration will grow in height. 
+
+```js
 function draw() {
-    walker.render();
-    walker.step();
+  background(127);
+  var index = floor(random(total));
+  randomCounts[index]++;
+
+  // Draw a rectangle to graph results
+  stroke(0);
+  strokeWeight(2);
+  fill(255);
+
+  var w = width/randomCounts.length;
+
+  for (var x = 0; x < randomCounts.length; x++) {
+    rect(x*w,height-randomCounts[x],w-1,randomCounts[x]);
+  }
 }
 ```
 
-Within the Walker class 2 variables are set up (x&y) and values declared for them. We then have two functions added to each object. The render function draws a dot at the designated x and y coordinate.
 
-```js
-function Walker() {
-    this.x = width/2;
-    this.y = height/2;
-    
-    this.render = function() {
-        stroke(0);
-        point(this.x,this.y);
-    }
-```
 
-In this example the walker moves its x and y poistion in 8 possible dirrections around him or it can stay still if the stepx and stepy are both equal to 0;  
-    
-```js
-    this.step = function () {
-        var stepx = floor(random(-1, 2));
-        var stepy = floor(random(-1, 2));
-
-        this.x = this.x + stepx;
-        this.y = this.y + stepy;
-
-        this.x = constrain(this.x, 0, width);
-        this.y = constrain(this.y, 0, height);
-    }
-}
-
-```
 [See the Code in action](https://georgebl.github.io/NatureOfCode/01_introduction/03_Proof_of_Uniform_Distribution/code.html) 

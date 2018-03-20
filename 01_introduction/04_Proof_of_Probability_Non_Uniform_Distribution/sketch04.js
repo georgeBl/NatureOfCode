@@ -2,7 +2,7 @@
 // Daniel Shiffman
 // http://natureofcode.com
 
-// An array to keep track of how often random numbers are picked
+// This script uses a probability in order to move the walker
 
 var walker;
 
